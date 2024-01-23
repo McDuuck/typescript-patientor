@@ -1,0 +1,15 @@
+POST http://localhost:3001/api/patients/1/entries
+Content-Type: application/json
+
+{
+    "id": "123456789",
+    "date": "2019-10-20",
+    "type": "Hospital",
+    "specialist": "MD House",
+    "diagnosisCodes": ["S62.5"],
+    "description": "Healing time appr. 2 weeks. patient doesn't remember how he got the injury.",
+    "discharge": {
+        "date": "2019-10-20",
+        "criteria": "Thumb has healed."
+    }
+}
